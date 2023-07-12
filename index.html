@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon4.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <title>Porfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="main">Folio<b>.</b></div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- sa loob ng boday class-container sa loob ng class container ay class wrapper
+        ex. <section class="container">
+        <div class="wrapper">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        </section>-->
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText">Coder</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ab reiciendis mollitia consectetur quae, blanditiis cumque nobis aliquid est nesciunt omnis maiores optio, corporis ea. Corporis adipisci accusantium voluptates earum!</p>
+                <div class="btns">
+                    <button>Download CV</button> 
+                    <button>Hire Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgItem">
+                    <img src="pngwing.com.png" id="splash">
+                    <img src="me.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["coder","developer","cybersecurity"], 
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+    </script>
+</body>
+
+</html>

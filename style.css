@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+   /*  overflow: hidden; */
+}
+
+/* #f3f5f8 Dimwhite */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e0ecff;
+}
+
+/* z-index - For a positioned box (that is, one with any position other than static), the z-index property specifies:
+1. The stack level of the box in the current stacking context.
+2. Whether the box establishes a local stacking context. */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+/* #3d535f darkGray */
+.main{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* #7f007f violet */
+b{
+  font-size: 60px;
+  color: #7f007f;  
+}
+
+/* for whole navbar */
+.navbar{
+    display: flex;
+    
+}
+
+/* only for navbar inside the <li> list-style ay yung parang may dot or dash pag list */
+.navbar li{
+    list-style: none;
+    margin: 0 25px;
+}
+
+.navbar li a{
+    font-size: 17px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navbar li:hover a{
+    color: #7f007f;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: left;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+    font-size: 10px;
+}
+
+
+.cols{
+    width: 50%;
+}
+
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #3d535f;
+    
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f007f;
+}
+
+h1{
+    display: block;
+    font-size: 5.5em;
+    font-weight: 1000;
+    font-family: 'Poppins', sans-serif;
+    color: #3d535f;
+}
+
+.multiText{
+    color: #7f007f;
+    text-transform: capitalize;
+}
+
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.3em;
+    color: #3d535f;
+}
+
+.btns{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+button{
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 5px 10px;
+    margin: 30px 3px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover{
+    background-color: #7f007f;
+}
+
+.imgItem{
+    position: relative;
+}
+
+.imgItem img{
+    position: relative;
+    height: 100%;
+    width: calc(100% - 50px);
+    top: -100px;
+    right: 50px;
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser{
+    100%{
+        right: 30px;
+        top: -90px;
+    }
+}
+
+.imgItem #splash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+
+}
+
+@keyframes animate{
+    100%{
+        top: 49%;
+        left: 51%;
+        width: 155%;
+    }
+}
